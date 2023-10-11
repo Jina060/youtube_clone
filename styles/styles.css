@@ -1,0 +1,299 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  position: relative;
+  background: #f0f0f0;
+  font-family: 'roboto', sans-serif;
+  height: 100%;
+}
+
+.top-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 1.2vw;
+}
+
+.toggle-btn {
+  cursor: pointer;
+  /* height: 40px; */
+  /* width: 40px; */
+  padding-right: 1px;
+  padding-top: 1px;
+  
+}
+
+.menu {
+  background:#ffffff;
+  border: solid 1px #ffffff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.menu:hover {
+  background:#f1f1f1;
+  border: solid 1px #f1f1f1;
+}
+
+.yt-logo {
+  height: 20px;
+  margin: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-section {
+  position: relative;
+  max-width: 715px;
+  width: 50%;
+  height: 40px;
+  display: flex;
+  margin-left: 125px;
+}
+
+.search-bar {
+  width: 95%;
+  height: 100%;
+  border: 1px solid #dbdbdb;
+  padding: 0 20px;
+  font-size: 16px;
+  text-transform: capitalize;
+  border-radius: 25px 0 0 25px;
+}
+
+.search-btn {
+  width: 12%;
+  height: 100%;
+  background: #f7f7f7;
+  border: 1px solid #dbdbdb;
+  padding: 5px 0;
+  border-left: none;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+}
+
+.search-btn:hover{
+  background: #ededed;
+}
+
+.voice-search {
+  height: 40px;
+  padding-top: 1px;
+  padding-left: 17px;
+}
+
+.voice-btn {
+  background: #f1f1f1;
+  border: solid 1px #f1f1f1;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+
+.options {
+  height: 35px;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.settings-btn {
+  padding-right: 10px;
+}
+
+.settings {
+  border: 0px;
+  background: none;
+  cursor: pointer;
+}
+
+.sign-in-btn {
+  background: none;
+  border: solid #e4e4e4 1px;
+  border-radius: 20px;
+  height: 40px;
+  width: 95px;
+  padding: 0 5px 0 5px;
+  cursor: pointer;
+}
+
+.sign-in-btn:hover {
+  border: none;
+}
+
+.Sign-in {
+  display: flex;
+  height: 40px;
+  padding-top: 5px;
+}
+
+.profile-icon {
+  padding-right: 3px;
+  padding-left: 2px;
+  padding-top: 1px;
+}
+
+.sign-in-label {
+  padding-left: 4px;
+  padding-top: 3px;;
+  font-size: 14.5px;
+}
+
+.side-bar {
+  width: 70px;
+  height: 91vh;
+  position: fixed;
+  background: #fff;
+  margin: 55px 0px 0 0px;
+  padding: 2px 2px 0 2px;
+}
+
+.contents {
+  margin-top: 2px;
+}
+
+.contents li {
+  text-align: center;
+  height: 70px;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-radius: 7px;
+}
+
+.contents li:hover {
+  background:#ededed;
+}
+
+.contents a {
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+}
+
+.contents span {
+  font-size: 10px;
+}
+
+/* .filter-bar { 
+  position: fixed;
+  left: 70px;
+  top: 55px;
+  width: 1250px;
+  height: 80px;
+  background: #ffffff;
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.filter-bar::-webkit-scrollbar {
+  display: flex;
+}
+
+.filter-bar ul {
+  display: flex;
+} 
+
+.filter-bar li {
+  text-decoration: none;
+  list-style-type: none;
+}
+.filter-options , .filter-active {
+  flex: 0 0 auto;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px #f1f1f1;
+  margin-right: 10px;
+  color: #000000;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.filter-active {
+  color: #ffffff;
+  background: #000000;
+  border: 1px ;
+}*/
+ 
+/*.filter-bar {
+  width: 1250px;
+  position: fixed;
+  left: 70px;
+  top: 55px;
+}
+
+.left-arrow {
+  background: #3d69b9;
+  float: left;
+  height: 60px;
+  text-align: center;
+  width: 60px;
+}
+
+.left-arrow:hover {
+  background: #69c;
+}
+
+.left-arrow p {
+  color: #fff;
+  font-size: 18px;
+}
+
+.right-arrow {
+  background: #3d69b9;
+  border-left: 1px solid #69c;
+  float: left;
+  height: 60px;
+  text-align: center;
+  width: 60px;
+}
+
+.right-arrow:hover {
+  background: #69c;
+}
+
+.right-arrow p {
+  color: #fff;
+  font-size: 18px;
+}
+
+.filter-bar ul {
+  float: left;
+  font-size: 0;
+  overflow: hidden;
+  width: 500px;
+  white-space: nowrap;
+}
+
+.filter-bar li {
+  border-left: 1px solid #69c;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  height: 60px;
+  list-style: none;
+  text-align: center;
+  width: 162px;
+}*/
